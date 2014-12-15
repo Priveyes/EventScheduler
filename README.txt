@@ -24,5 +24,5 @@ Sort the events by time. This takes O(n log(n)) time. Fill the "m" array, which 
 m[i][j] describes the optimal solution with i events considered and j minutes available. Thus the optimal solution for
 the problem lies at m[n-1][w-1]. Optimal solution in this case is maximizing the number of votes that you can fit
 in the amount of time given. To get the actual schedule, we must backtrack the matrix m. This takes no more than O(n)
-time. Thus this whole solution takes O(n*w) time and space. In this particular problem however, we have w as a constant.
-Thus this solution takes O(n) time and space.
+time. Thus this whole solution takes O(nlogn) + O(n*w) time and O(n*w)  space. In this particular problem however, we have w as a constant.
+Thus this solution takes O(nlogn) time and O(n) space.
