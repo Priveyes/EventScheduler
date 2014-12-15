@@ -53,7 +53,7 @@ public class DynamicKnapsackSolution {
         Vector<Vector<intBoolPair>> m = new Vector<Vector<intBoolPair>>(); // can't be primitive type in the container vector
         //endregion
         //region initialization and set up
-        Collections.sort(scheduleEvents); // O(NlogN) where N = size(scheduleEvents)
+        Collections.sort(scheduleEvents); // O(NlogN) where N = size(scheduleEvents) - satisfy precondition here
         for (int i = 0; i < scheduleEvents.size(); i++){
             m.add(new Vector<intBoolPair>());
             for (int j = 0; j < W; j++){
